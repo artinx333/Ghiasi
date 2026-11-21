@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffd43b">
+  <title>قیاسی | رفیق پرحرف تو</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="top">
+      <div class="brand">
+        <div class="brand-dot">ق</div>
+        <div>
+          <h1>قیاسی</h1>
+          <p>یه رفیق بامزه برای گپ زدن 😎</p>
+        </div>
+      </div>
+      <span class="status"><i></i> آماده‌ی گپ</span>
+    </header>
+
+    <section class="hero">
+      <div class="mascot-wrap" id="mascotWrap" aria-label="شخصیت کارتونی زرد متحرک">
+        <div class="mascot-shadow"></div>
+        <div class="mascot">
+          <div class="hair hair-one"></div><div class="hair hair-two"></div>
+          <div class="goggle"><div class="eye"><div class="pupil"></div></div></div>
+          <div class="strap"></div>
+          <div class="mouth" id="mouth"></div>
+          <div class="overall">
+            <div class="bib"></div><div class="button b1"></div><div class="button b2"></div>
+          </div>
+          <div class="arm arm-left"></div><div class="arm arm-right"></div>
+          <div class="leg leg-left"></div><div class="leg leg-right"></div>
+        </div>
+        <div class="hello-bubble" id="helloBubble">سلام! چه خبر؟</div>
+      </div>
+      <div class="hero-copy">
+        <h2>سلام! من قیاسی‌ام 👋</h2>
+        <p>حرف بزن یا تایپ کن؛ منم با صدا جوابت رو می‌دم.</p>
+      </div>
+    </section>
+
+    <section class="chat-panel">
+      <div class="chat-head">
+        <strong>گفت‌وگوی ما</strong>
+        <button id="clearBtn" class="text-btn" type="button">پاک کردن گفتگو</button>
+      </div>
+      <div id="chat" class="chat" aria-live="polite">
+        <div class="msg bot">
+          <div class="bubble">سلام رفیق! 😁 من آماده‌ام. می‌تونی پیام بدی یا روی میکروفون بزنی.</div>
+          <small>قیاسی</small>
+        </div>
+      </div>
+      <div class="typing" id="typing" hidden>قیاسی داره فکر می‌کنه<span>•••</span></div>
+      <form id="chatForm" class="composer">
+        <button id="micBtn" class="round-btn mic" type="button" aria-label="شروع صحبت" title="صحبت کن">🎙️</button>
+        <input id="messageInput" type="text" placeholder="اینجا چیزی بنویس..." autocomplete="off" maxlength="500">
+        <button class="send-btn" type="submit">ارسال</button>
+      </form>
+      <p class="hint" id="hint">برای صحبت، اجازه‌ی میکروفون رو بده. پاسخ صوتی با صدای موجود در دستگاه پخش می‌شه.</p>
+    </section>
+
+    <footer>ساخته‌شده برای گپ و خنده ✨</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
